@@ -1,0 +1,80 @@
+:root {
+    --md-sys-color-primary: rgb(101 55 0);
+    --md-ref-typeface-brand: 'Roboto Condensed';
+    --md-ref-typeface-plain: 'Roboto Condensed';
+  }
+body {
+    font-family: var(--md-sys-color-primary), sans-serif;
+    font-size: 20;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+  }
+
+
+        /* 弹窗样式 */
+        .dialog-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 9999;
+        }
+
+        .dialog-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .mdc-drawer{
+            width: 20%;
+            line-height: 2;
+        }
+
+        .mdc-drawer-app-content {
+            flex: auto;
+            overflow: auto;
+            position: relative;
+
+          }
+          
+          .main-content {
+            overflow: auto;
+            height: 100%;
+          }
+          
+          .app-bar {
+            position: absolute;
+          }
+          
+
+ 
